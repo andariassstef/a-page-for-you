@@ -1,3 +1,4 @@
+
 const images = [
   "sasa.jpg",
   "bunga.jpg",
@@ -16,7 +17,7 @@ const contents = [
     and please, don’t forget to be kinder to yourself too, okay?
     you deserve to be loved gently, including by your own self.
     <br><br>
-    i’m really grateful i got to know you and have you in my life.
+    i'm really grateful i got to know you and have you in my life.
     stay longer, please. i still want to make so many memories with you.
   </p>
   `,
@@ -36,17 +37,17 @@ const contents = [
   `,
 
   `
-  <div class="music-card">  
+  <div class="music-card">
 
     <h3>Best Part</h3>
     <p>DAY6</p>
 
     <p class="music-text">
-      “Best Part” reminds me of the way you make everything feel softer
+      "Best Part" reminds me of the way you make everything feel softer
       and warmer without even trying.
       <br><br>
       thank you for becoming one of the best parts of my days,
-      in ways you probably don’t even realize.
+      in ways you probably don't even realize.
       <br><br>
       so whenever you listen to this song,
       i hope you remember that someone out there
@@ -65,19 +66,22 @@ const contents = [
 
 let current = 0;
 
-function showImage(){
+function showImage() {
 
-  document.getElementById("albumImage").src = images[current];
+  const albumImage = document.getElementById("albumImage");
+  const slideContent = document.getElementById("slideContent");
 
-  document.getElementById("slideContent").innerHTML = contents[current];
+  albumImage.src = images[current];
+
+  slideContent.innerHTML = contents[current];
 }
 
-function nextSlide(){
+function nextSlide() {
   current = (current + 1) % images.length;
   showImage();
 }
 
-function prevSlide(){
+function prevSlide() {
   current = (current - 1 + images.length) % images.length;
   showImage();
 }
