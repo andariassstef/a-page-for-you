@@ -36,9 +36,7 @@ const contents = [
   `,
 
   `
-  <div class="music-card">
-
-    <img src="albumImage/album.jpg" class="music-cover">
+  <div class="music-card">  
 
     <h3>Best Part</h3>
     <p>DAY6</p>
