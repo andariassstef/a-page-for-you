@@ -1,7 +1,7 @@
 const images = [
-  "albumImage/sasa.jpg",
-  "albumImage/bunga.jpg",
-  "albumImage/album.jpg"
+  "sasa.jpg",
+  "bunga.jpg",
+  "album.jpg"
 ];
 
 const contents = [
